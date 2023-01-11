@@ -5,14 +5,15 @@ theme = "ghostwriter"
 [Params]
     mainSections = ["post"]
     intro = true
-    headline = "My headline"
-    description = "My description"
-    github = "https://github.com/johnstorey"
-    twitter = "https://twitter.com/XXX"
+    headline = ""
+    description = "Random thoughts, mostly my own."
+    github = ""
+    twitter = ""
     email = "john@johnstorey.org"
-    opengraph = true
-    shareTwitter = true
+    opengraph = false
+    shareTwitter = false
     dateFormat = "Mon, Jan 2, 2006"
+    rss = true
 
 [Permalinks]
     post = "/:filename/"
