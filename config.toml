@@ -1,19 +1,53 @@
-baseurl = "/"
+baseURL = "/"
+languageCode = "en-us"
 title = "John's Thoughts"
-theme = "ghostwriter"
+theme = "mediumish-gohugo-theme"
+summaryLength = 25
+copyright = "John Storey - All rights reserved"
+enableEmoji = true
+publishDir = "docs"
+#disqusShortname = "your-shortname-here"
+#googleAnalytics = "UA-1XXXXXXX1-1"
 
-[Params]
-    mainSections = ["post"]
-    intro = true
-    headline = ""
-    description = "Random thoughts, mostly my own."
-    github = ""
-    twitter = ""
-    email = "john@johnstorey.org"
-    opengraph = false
-    shareTwitter = false
-    dateFormat = "Mon, Jan 2, 2006"
-    rss = true
+[params]
+  logo = "/assets/images/tux-logo.jpg"
+  description ="Software and Culture."
+  #mailchimp = "you can provide a mailchimp-link here"
 
-[Permalinks]
-    post = "/:filename/"
+[params.author]
+  name = "John Storey"
+  thumbnail = "/assets/images/author.png"
+  description = "Programmer and Happy Texan"
+
+[params.index]
+  picture = "/assets/images/author.png"
+  title = "John Storey"
+  subtitle = "Engineering Management, Engineering, and Unpopular Comments on Culture"
+  mdtext = '''
+'''
+  alertbar = false
+
+[params.social]
+  github = "johnstorey"
+  #linkedin = ""
+  #xing = ""
+  #medium = ""
+  #twitter = ""
+  #instagram = ""
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 200
+    url = "/"
+# [[menu.main]]
+    # name = "Imprint"
+    # identifier = "imprint"
+    # weight = 200
+    # url = "/static/imprint"
