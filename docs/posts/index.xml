@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on John&#39;s Thoughts</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on John&#39;s Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>John Storey - All rights reserved</copyright>
+    <lastBuildDate>Mon, 06 Feb 2023 22:09:52 -0600</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Hosting</title>
+      <link>/posts/20230206-blog-hosting/</link>
+      <pubDate>Mon, 06 Feb 2023 22:09:52 -0600</pubDate>
+      
+      <guid>/posts/20230206-blog-hosting/</guid>
+      <description>How are you seeing this? It&amp;rsquo;s self-hosted, like many of my services. My overlay network is Tailscale.
+.</description>
+    </item>
+    
+    <item>
+      <title>Yesterdays War</title>
+      <link>/posts/20230206-yesterdays-war/</link>
+      <pubDate>Mon, 06 Feb 2023 20:45:57 -0600</pubDate>
+      
+      <guid>/posts/20230206-yesterdays-war/</guid>
+      <description>Yesterday&amp;rsquo;s War I&amp;rsquo;ve been around awhile. Maybe you have two. One of the eternal wars among developers is: Emacs, Vi, or an IDE? It&amp;rsquo;s so famous its in cartoons, such as this famous one from (XKCD)[https://xkcd.</description>
+    </item>
+    
+    <item>
+      <title>20230120 Weekly Learnings</title>
+      <link>/posts/20230120-weekly-learnings/</link>
+      <pubDate>Fri, 20 Jan 2023 10:20:53 -0600</pubDate>
+      
+      <guid>/posts/20230120-weekly-learnings/</guid>
+      <description>This week has been solidifying a first cut at infrastructure to develop side projects on. Lots of research currently has me settled on the following technologies.</description>
+    </item>
+    
+    <item>
+      <title>Life Update 20220111</title>
+      <link>/posts/life-update-20220111/</link>
+      <pubDate>Wed, 11 Jan 2023 10:20:53 -0600</pubDate>
+      
+      <guid>/posts/life-update-20220111/</guid>
+      <description>It&amp;rsquo;s been a short while since I&amp;rsquo;ve posted, but my project list remains overloaded. So here is a brief update on what I&amp;rsquo;ve been up to.</description>
+    </item>
+    
+    <item>
+      <title>2023 Rust or F#?</title>
+      <link>/posts/2023-rust-or-f#/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2023-rust-or-f#/</guid>
+      <description>Why Am I Choosing a New Language Programmers periodically need to keep up to date with the world around them. Tools, methodologies, and languages are in a constant state of improvement.</description>
+    </item>
+    
+  </channel>
+</rss>
