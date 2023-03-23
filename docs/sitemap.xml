@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/blog/20230206-yesterdays-war/</loc>
-    <lastmod>2023-03-07T20:01:14-06:00</lastmod>
-  </url><url>
     <loc>/blog/</loc>
-    <lastmod>2023-03-07T20:01:14-06:00</lastmod>
+    <lastmod>2023-03-23T07:40:14-05:00</lastmod>
+  </url><url>
+    <loc>/blog/chatgpt-and-rust/</loc>
+    <lastmod>2023-03-23T07:40:14-05:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-03-23T07:40:14-05:00</lastmod>
+  </url><url>
+    <loc>/blog/20230206-yesterdays-war/</loc>
     <lastmod>2023-03-07T20:01:14-06:00</lastmod>
   </url><url>
     <loc>/post/20230206-blog-hosting/</loc>

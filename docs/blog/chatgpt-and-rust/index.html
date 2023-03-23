@@ -6,20 +6,20 @@
 	
 	<link rel="icon" href="/assets/images/tux-logo.jpg">
 	
-	<title>20230206 Yesterdays War | John&#39;s Thoughts</title>
+	<title>ChatGPT and Rust | John&#39;s Thoughts</title>
 	
 	
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="20230206 Yesterdays War"/>
-<meta name="twitter:description" content="I&rsquo;ve been around awhile. Maybe you have two. One of the eternal wars among developers is: Emacs, Vi, or an IDE? It&rsquo;s so famous its in cartoons, such as this famous one from (XKCD)[https://xkcd."/>
+<meta name="twitter:title" content="ChatGPT and Rust"/>
+<meta name="twitter:description" content="A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution."/>
 
-	<meta property="og:title" content="20230206 Yesterdays War" />
-<meta property="og:description" content="I&rsquo;ve been around awhile. Maybe you have two. One of the eternal wars among developers is: Emacs, Vi, or an IDE? It&rsquo;s so famous its in cartoons, such as this famous one from (XKCD)[https://xkcd." />
+	<meta property="og:title" content="ChatGPT and Rust" />
+<meta property="og:description" content="A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/20230206-yesterdays-war/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-03-07T20:01:14-06:00" />
-<meta property="article:modified_time" content="2023-03-07T20:01:14-06:00" />
+<meta property="og:url" content="/blog/chatgpt-and-rust/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-03-23T07:40:14-05:00" />
+<meta property="article:modified_time" content="2023-03-23T07:40:14-05:00" />
 
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -87,19 +87,19 @@
     <p>Share</p>
     <ul>
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://twitter.com/intent/tweet?text=20230206%20Yesterdays%20War&url=%2fblog%2f20230206-yesterdays-war%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=ChatGPT%20and%20Rust&url=%2fblog%2fchatgpt-and-rust%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
         <i class="fab fa-twitter"></i>
         </a>
         </li>
         
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2f20230206-yesterdays-war%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2fchatgpt-and-rust%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
         <i class="fab fa-facebook-f"></i>
         </a>
         </li>
 
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2f20230206-yesterdays-war%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2fchatgpt-and-rust%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
         <i class="fab fa-xing"></i>
         </a>
         </li>        
@@ -124,9 +124,9 @@
                                 <span class="author-description">
                                     Programmer and Happy Texan<br>
                                     <i class="far fa-star"></i>
-                                    Mar 7, 2023
+                                    Mar 23, 2023
                                     <i class="far fa-clock clock"></i>
-                                    2 min read
+                                    3 min read
                                 </span>					
                             </div>
                         </div>			
@@ -134,7 +134,7 @@
                         
                                                 
                         
-                        <h1 class="posttitle">20230206 Yesterdays War</h1> 
+                        <h1 class="posttitle">ChatGPT and Rust</h1> 
                     </div>
 
                     
@@ -144,25 +144,24 @@
 
                     
                     <div class="article-post">
-                        <p>I&rsquo;ve been around awhile. Maybe you have two. One of the eternal wars
-among developers is: Emacs, Vi, or an IDE? It&rsquo;s so famous its in cartoons,
-such as this famous one from (XKCD)[https://xkcd.com].</p>
-<p>By the way, if you have never been to that site, treat yourself. It&rsquo;s a hoot!</p>
-<p><img src="https://imgs.xkcd.com/comics/real_programmers.png" alt="Image from xkcd.com"></p>
-<p>Yesterday I was remembering the experience of flow in a mouseless world from my early days, and why I left that (lack of good debugger support across languages.) I decided to check on the state of Emacs and Vim and see if I should go back.</p>
-<p>For my money, they might as well be the same now.</p>
-<h1 id="the-state-of-things">The State of Things</h1>
-<p>My point of comparison was the Emacs distribution, <a href="https://www.spacemacs.org">Spacemacs</a>. Spacemacs type distributions provide nice menu driven interfaces for the potentially unending options. You press the spacebar, and it shows a list of the available categories of commands (which it calls major modes). Select one of those &ndash; a one letter key press &ndash; and you see all the options in that category. This means most commands consist of typing &ldquo;SPACE key-one key-two&rdquo;. Help is built in to the process, and rarely is a mouse involved.</p>
-<p>Then I watched a Neovim configuration setup video and found a distribution, <a href="https://spacevim.org">SpaceVim</a>. It&rsquo;s pretty much the same thing.</p>
-<p>Emacs has Elisp as its extenstion language. Vim has Lua. I may prefer Lua, but at the end of the day, it&rsquo;s Lisp.</p>
-<p>I&rsquo;m sure there are important differences, but from 1000 feet it looks much the same.</p>
-<p>But I want that debugger. I want that language support for even obscure language. I want <a href="https://code.visualstudio.com">Visual Studio Code</a>. But wait &hellip;</p>
-<h1 id="vspacecode">VSpaceCode</h1>
-<p><a href="https://vspacecode.github.io">VSpaceCode</a> replicates the Spacemacs experience in VS Code, and it seems pretty good. So I can have the extensions and debugger from VS Code with most of the mouseless experience of Vim or Emacs?</p>
-<p>Yes please!</p>
-<p>Maybe the next month of using VSpaceCode will prove me wrong, but I think its over. Everyone who wants a mouseless experience &ndash; and does not want to spend the time maintaining their own customer editor &ndash; has ended up here.</p>
-<p>It&rsquo;s time. Give up bikeshedding. Just go with VS Code and VSpaceCode, and get to the coding. Me, I am 50%-ish through my current project, and I&rsquo;ll finish it with VSpaceCode.</p>
-<p>Happy hacking!</p>
+                        <p>A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution. Forget paying a centralized entity to host your containers; host them yourself. For big OSS projects, or inside large enterprises, this would make lots of sense.</p>
+<p>After a search on Google I found some prior art. One was a weekend project that did not quite fit what I was thinking of, and a better one had a hard dependency on Kubernetes. These existing solutions don&rsquo;t seem suitable for the use cases I am thinking of.</p>
+<p>The catch here is that I am currently deep into learning the F# ecosystem, and loving it. This project screams for a systems language, and while Rust has long been on my &ldquo;to learn&rdquo; list it&rsquo;s difficult to master two ecosystems, have a job, have a family, and other concerns all at once. That&rsquo;s a recipie for burnout for me.</p>
+<p>But this project is something the world needs, and personally, I find it exciting.</p>
+<p>So what to do? I decided to try to get ChatGPT to write it for me.</p>
+<p>An unknown language, unknown ecosystem, and using AI to accelerate both my learning curve and productivity?</p>
+<p>Exciting!</p>
+<h2 id="results">Results</h2>
+<p>I was able to get the framework from ChatGPT in 1 hour. For comparison, if I knew Rust better, my estimate is this would be .5 to 1 man days of work. The code does not compile, undoubtedly has logic bugs, and in general is a far sight from production ready. But it would be better code, or at least compile. But I&rsquo;ll tell you after decades of programming: the bones are good.</p>
+<p>ChatGPT probably just sped up my work by 4X to 8X for this part of the development.</p>
+<p>After that, it requires a human right now. I could probably get some basic error checking out of ChatGPT, but don&rsquo;t trust it to avoid logic errors for example. I did make alot of progress feeding the errors back into ChatGPT, but there were limits to the effectiveness of that. Not tested was feeding the whole repository to ChatGPT, along with errors, and seeing if it could do better with that context to work with.</p>
+<p>Along the way I was educated by ChatGPT about the current way Bittorrent distributes files, the types of Rust client libraries I could use, and aspects of the language that helped me level up.</p>
+<p>You can take a look at the resulting code <a href="https://github.com/johnstorey/dockerrush">here</a>.</p>
+<h2 id="from-here">From Here</h2>
+<p>This has motivated me to learn Rust and its ecosystem now. That is despite the fact I am in the midst of the same process with F#. (F# is a beauty btw.)</p>
+<p>But Rust an awesome systems language. Using it reminds me of early in my career when I was a consultant working with object databases. You have to keep track of the memory model a bit, but in return you should get screaming performance. Algorithms trump language, sure, but Rust makes it much, much easier.</p>
+<p>I&rsquo;m going to fix this code, expand it, and put it out there. I can&rsquo;t wait until its time to think through a network of managed nodes here. Should we just use the existing Bittorrent model? Are there solution specific issues that require different distributed management? It&rsquo;s going to be fun.</p>
+<p>Since this is my vehicle for really mastering Rust (I learn best if I do while learning) so don&rsquo;t judge the code too harshly. I normally work with a local git server, but put this one on GitHub because I hope others also believe P2P networked, privately controlled, networks of Docker Registry servers would provide significant value to the worl.</p>
 
                     </div>
                     
@@ -177,10 +176,8 @@ such as this famous one from (XKCD)[https://xkcd.com].</p>
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
-                        <a class="d-block col-md-6" href="/blog/chatgpt-and-rust/"> &laquo; ChatGPT and Rust</a>
                     
-                    
-                        <a class="d-block col-md-6 text-lg-right" href="/blog/20230120-weekly-learnings/">20230120 Weekly Learnings &raquo;</a>
+                        <a class="d-block col-md-6 text-lg-right" href="/blog/20230206-yesterdays-war/">20230206 Yesterdays War &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>
