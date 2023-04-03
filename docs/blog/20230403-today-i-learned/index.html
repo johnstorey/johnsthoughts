@@ -6,20 +6,20 @@
 	
 	<link rel="icon" href="/assets/images/tux-logo.jpg">
 	
-	<title>ChatGPT and Rust | John&#39;s Thoughts</title>
+	<title>20230403 Today I Learned | John&#39;s Thoughts</title>
 	
 	
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ChatGPT and Rust"/>
-<meta name="twitter:description" content="A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution."/>
+<meta name="twitter:title" content="20230403 Today I Learned"/>
+<meta name="twitter:description" content="Technically &ldquo;this weekend I learned&rdquo; but still. Maybe even better &ldquo;what I learned in the 2 - 3 hours I was able to squeeze out for coding this weekend&rdquo;."/>
 
-	<meta property="og:title" content="ChatGPT and Rust" />
-<meta property="og:description" content="A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution." />
+	<meta property="og:title" content="20230403 Today I Learned" />
+<meta property="og:description" content="Technically &ldquo;this weekend I learned&rdquo; but still. Maybe even better &ldquo;what I learned in the 2 - 3 hours I was able to squeeze out for coding this weekend&rdquo;." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/chatgpt-and-rust/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-03-23T07:40:14-05:00" />
-<meta property="article:modified_time" content="2023-03-23T07:40:14-05:00" />
+<meta property="og:url" content="/blog/20230403-today-i-learned/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-03T08:29:09-05:00" />
+<meta property="article:modified_time" content="2023-04-03T08:29:09-05:00" />
 
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -87,19 +87,19 @@
     <p>Share</p>
     <ul>
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://twitter.com/intent/tweet?text=ChatGPT%20and%20Rust&url=%2fblog%2fchatgpt-and-rust%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=20230403%20Today%20I%20Learned&url=%2fblog%2f20230403-today-i-learned%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
         <i class="fab fa-twitter"></i>
         </a>
         </li>
         
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2fchatgpt-and-rust%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2f20230403-today-i-learned%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
         <i class="fab fa-facebook-f"></i>
         </a>
         </li>
 
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2fchatgpt-and-rust%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2f20230403-today-i-learned%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
         <i class="fab fa-xing"></i>
         </a>
         </li>        
@@ -124,7 +124,7 @@
                                 <span class="author-description">
                                     Programmer and Happy Texan<br>
                                     <i class="far fa-star"></i>
-                                    Mar 23, 2023
+                                    Apr 3, 2023
                                     <i class="far fa-clock clock"></i>
                                     3 min read
                                 </span>					
@@ -134,7 +134,7 @@
                         
                                                 
                         
-                        <h1 class="posttitle">ChatGPT and Rust</h1> 
+                        <h1 class="posttitle">20230403 Today I Learned</h1> 
                     </div>
 
                     
@@ -144,24 +144,38 @@
 
                     
                     <div class="article-post">
-                        <p>A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution. Forget paying a centralized entity to host your containers; host them yourself. For big OSS projects, or inside large enterprises, this would make lots of sense.</p>
-<p>After a search on Google I found some prior art. One was a weekend project that did not quite fit what I was thinking of, and a better one had a hard dependency on Kubernetes. These existing solutions don&rsquo;t seem suitable for the use cases I am thinking of.</p>
-<p>The catch here is that I am currently deep into learning the F# ecosystem, and loving it. This project screams for a systems language, and while Rust has long been on my &ldquo;to learn&rdquo; list it&rsquo;s difficult to master two ecosystems, have a job, have a family, and other concerns all at once. That&rsquo;s a recipie for burnout for me.</p>
-<p>But this project is something the world needs, and personally, I find it exciting.</p>
-<p>So what to do? I decided to try to get ChatGPT to write it for me.</p>
-<p>An unknown language, unknown ecosystem, and using AI to accelerate both my learning curve and productivity?</p>
-<p>Exciting!</p>
-<h2 id="results">Results</h2>
-<p>I was able to get the framework from ChatGPT in 1 hour. For comparison, if I knew Rust better, my estimate is this would be .5 to 1 man days of work. The code does not compile, undoubtedly has logic bugs, and in general is a far sight from production ready. But it would be better code, or at least compile. But I&rsquo;ll tell you after decades of programming: the bones are good.</p>
-<p>ChatGPT probably just sped up my work by 4X to 8X for this part of the development.</p>
-<p>After that, it requires a human right now. I could probably get some basic error checking out of ChatGPT, but don&rsquo;t trust it to avoid logic errors for example. I did make alot of progress feeding the errors back into ChatGPT, but there were limits to the effectiveness of that. Not tested was feeding the whole repository to ChatGPT, along with errors, and seeing if it could do better with that context to work with.</p>
-<p>Along the way I was educated by ChatGPT about the current way Bittorrent distributes files, the types of Rust client libraries I could use, and aspects of the language that helped me level up.</p>
-<p>You can take a look at the resulting code <a href="https://github.com/johnstorey/dockerrush">here</a>.</p>
-<h2 id="from-here">From Here</h2>
-<p>This has motivated me to learn Rust and its ecosystem now. That is despite the fact I am in the midst of the same process with F#. (F# is a beauty btw.)</p>
-<p>But Rust an awesome systems language. Using it reminds me of early in my career when I was a consultant working with object databases. You have to keep track of the memory model a bit, but in return you should get screaming performance. Algorithms trump language, sure, but Rust makes it much, much easier.</p>
-<p>I&rsquo;m going to fix this code, expand it, and put it out there. I can&rsquo;t wait until its time to think through a network of managed nodes here. Should we just use the existing Bittorrent model? Are there solution specific issues that require different distributed management? It&rsquo;s going to be fun.</p>
-<p>Since this is my vehicle for really mastering Rust (I learn best if I do while learning) so don&rsquo;t judge the code too harshly. I normally work with a local git server, but put this one on GitHub because I hope others also believe P2P networked, privately controlled, networks of Docker Registry servers would provide significant value to the worl.</p>
+                        <p>Technically &ldquo;this weekend I learned&rdquo; but still. Maybe even better &ldquo;what I learned in the 2 - 3 hours I was able
+to squeeze out for coding this weekend&rdquo;. &hellip; anyways &hellip;</p>
+<p>I&rsquo;ve been using my free time to continue to work on the Docker Registry with bittorrent distribution project. I had
+been very happy with the ChatGPT generated code in the past, but when I really started debugging it I did not
+find an cohesive logic that allowed me to understand the intent of the code that would allow me to fix the broken
+parts generated by ChatGPT.</p>
+<p>Well, a professional might start from an OpenAPI specification anyways. A search on Google yielded such a specification, which,
+when run through openapi-generator yielded a Rust Tokio solution. I&rsquo;m getting more familiar with rust, so afer some study the
+intended usage of the code made sense.</p>
+<p>Soon after I ran into what appears to my first promise of Rust, broken. The issue is this line here:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>        Ok(V2NameBlobsDigestGetResponse::
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">TheBlobIdentifiedByDigestIsAvailable_2</span>(
+</span></span><span style="display:flex;"><span>                ByteArray::from(swagger::ByteArray(contents))))</span></span></code></pre></div>
+<p>The last expression in the ByteArray::from() call warns as &ldquo;swagger::ByteArray&rdquo; not needed, and suggests I remove it while Rust
+nicely refuses to compile with warnings.</p>
+<p>Ok! This is the promised helpful compiler messages in action, right? Let&rsquo;s take that out then.</p>
+<p>Now the code won&rsquo;t compiled because &ldquo;contents&rdquo; is the wrong type.</p>
+<p>After a few cycles of that I found the directive to override warnings and compile anyways. The code now looks like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>       <span style="color:#75715e">#[allow(warnings)]</span>
+</span></span><span style="display:flex;"><span>        Ok(V2NameBlobsDigestGetResponse::
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">TheBlobIdentifiedByDigestIsAvailable_2</span>(
+</span></span><span style="display:flex;"><span>                ByteArray::from(swagger::ByteArray(contents))))</span></span></code></pre></div>
+<p>I&rsquo;m actually pleased that the code refused to compile with warnings. I&rsquo;ve seem code bases with over ten thousand warnings that
+there is a potential nil defreference in C# that the developers happily ignored. In my belief, warnings should be treated as
+errors until overwritten.</p>
+<p>That does not look like much, but I spend tons of time in documentation learning about other Rust language features along the
+way, debugging some match statements by studying generated code to see the generation pattern, and reading lots of Tokio
+documentation to understand what the existing code does and what I am intended to fill in.</p>
+<p>All in all, a short but satisfying session. I see why people want Go for web services, especially serverless though. A memory leak in a serverless function will initially seem to have no effect because the function shuts down between calls. Until you start to
+scale and the cloud provider never gets a chance to shut it down &ndash; then your issue will show up. In other words, Go lets you get it out
+faster; Rust works on keeping your long term maintenance costs low. It&rsquo;s the maintenance costs that matter in the long term, but a
+startup might thing time to market is more important.</p>
 
                     </div>
                     
@@ -176,10 +190,8 @@
                     
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
-                        <a class="d-block col-md-6" href="/blog/20230403-today-i-learned/"> &laquo; 20230403 Today I Learned</a>
                     
-                    
-                        <a class="d-block col-md-6 text-lg-right" href="/blog/20230206-yesterdays-war/">20230206 Yesterdays War &raquo;</a>
+                        <a class="d-block col-md-6 text-lg-right" href="/blog/chatgpt-and-rust/">ChatGPT and Rust &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>
