@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>John Storey - All rights reserved</copyright>
-    <lastBuildDate>Mon, 03 Apr 2023 08:29:09 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 08:47:55 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Terminology</title>
+      <link>/blog/rust-terminology/</link>
+      <pubDate>Sat, 15 Apr 2023 08:47:55 -0500</pubDate>
+      
+      <guid>/blog/rust-terminology/</guid>
+      <description>TIL This post contains some personal notes on Rust terminology, but also learned today / this week
+Microsoft PowerApps has serious developer experience issues in Chrome on MacOS, including Change a flow called by a Canvas App, and the changed input variables may or may not be propagated to the .</description>
+    </item>
+    
     <item>
       <title>20230403 Today I Learned</title>
       <link>/blog/20230403-today-i-learned/</link>

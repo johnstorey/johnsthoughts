@@ -17,7 +17,7 @@ publishDir = "docs"
 [params.author]
   name = "John Storey"
   thumbnail = "/assets/images/author.png"
-  description = "Programmer and Happy Texan"
+  description = "Software Engineering Manager and Happy  Texan"
 
 [params.index]
   picture = "/assets/images/author.png"

@@ -6,22 +6,22 @@
 	
 	<link rel="icon" href="/assets/images/tux-logo.jpg">
 	
-	<title>Blog Hosting | John&#39;s Thoughts</title>
+	<title>Rust Terminology | John&#39;s Thoughts</title>
 	
 	
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blog Hosting"/>
-<meta name="twitter:description" content="How are you seeing this? It&rsquo;s self-hosted, like many of my services. My overlay network is Tailscale.
-."/>
+<meta name="twitter:title" content="Rust Terminology"/>
+<meta name="twitter:description" content="TIL This post contains some personal notes on Rust terminology, but also learned today / this week
+Microsoft PowerApps has serious developer experience issues in Chrome on MacOS, including Change a flow called by a Canvas App, and the changed input variables may or may not be propagated to the ."/>
 
-	<meta property="og:title" content="Blog Hosting" />
-<meta property="og:description" content="How are you seeing this? It&rsquo;s self-hosted, like many of my services. My overlay network is Tailscale.
-." />
+	<meta property="og:title" content="Rust Terminology" />
+<meta property="og:description" content="TIL This post contains some personal notes on Rust terminology, but also learned today / this week
+Microsoft PowerApps has serious developer experience issues in Chrome on MacOS, including Change a flow called by a Canvas App, and the changed input variables may or may not be propagated to the ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/20230206-blog-hosting/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-02-06T22:09:52-06:00" />
-<meta property="article:modified_time" content="2023-02-06T22:09:52-06:00" />
+<meta property="og:url" content="/blog/rust-terminology/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-15T08:47:55-05:00" />
+<meta property="article:modified_time" content="2023-04-15T08:47:55-05:00" />
 
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -89,19 +89,19 @@
     <p>Share</p>
     <ul>
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://twitter.com/intent/tweet?text=Blog%20Hosting&url=%2fposts%2f20230206-blog-hosting%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Rust%20Terminology&url=%2fblog%2frust-terminology%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
         <i class="fab fa-twitter"></i>
         </a>
         </li>
         
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fposts%2f20230206-blog-hosting%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2frust-terminology%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
         <i class="fab fa-facebook-f"></i>
         </a>
         </li>
 
         <li class="ml-1 mr-1">
-        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fposts%2f20230206-blog-hosting%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2frust-terminology%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
         <i class="fab fa-xing"></i>
         </a>
         </li>        
@@ -126,9 +126,9 @@
                                 <span class="author-description">
                                     Software Engineering Manager and Happy  Texan<br>
                                     <i class="far fa-star"></i>
-                                    Feb 6, 2023
+                                    Apr 15, 2023
                                     <i class="far fa-clock clock"></i>
-                                    1 min read
+                                    3 min read
                                 </span>					
                             </div>
                         </div>			
@@ -136,7 +136,7 @@
                         
                                                 
                         
-                        <h1 class="posttitle">Blog Hosting</h1> 
+                        <h1 class="posttitle">Rust Terminology</h1> 
                     </div>
 
                     
@@ -146,8 +146,41 @@
 
                     
                     <div class="article-post">
-                        <p>How are you seeing this? It&rsquo;s self-hosted, like many of my services. My overlay network is <a href="https://tailscale.com">Tailscale</a>.</p>
-<p><img src="/assets/2023/CurrentMeowSetup.drawio.png" alt="Diagram of reverse proxy to home network">.</p>
+                        <h1 id="til">TIL</h1>
+<p>This post contains some personal notes on Rust terminology, but also learned today / this week</p>
+<ul>
+<li>Microsoft PowerApps has serious developer experience issues in Chrome on MacOS, including
+<ul>
+<li>Change a flow called by a Canvas App, and the changed input variables may or may not be propagated to the .Run command in the calling canvas app. I had to recreate the flow &ndash; refreshing the browser did not help.</li>
+<li>JSON Arrays returned from HTTP calls are difficult to work with and have a non-obvious way to interact with them</li>
+</ul>
+</li>
+<li>gRPC
+<ul>
+<li>It&rsquo;s like CORBA all over again!</li>
+<li>Seems better suited to higher level functions than CRUD/REST type APIs and probably only shows real advantages with larger amounts of data.</li>
+<li>gRPC-Web will work over bidirectional HTTP/2 connections, but requires a proxy that seems like it will clearly limit scalability. If you think you need that you probably need something like Elixir, Phoenix, and LiveView. Or maybe F#, Fable, and Fable.Remoting &ndash; but I suspect they have similar limitations</li>
+<li>Along that vein, I think this means gRPC in the browser will be the correct choice in only a small number of situations. More likely you want some optimized reactive architecture, or SSE (server side events), etc.</li>
+<li>gRPC in anything other than the browser seems like a great idea. I was able to stream events to my client app in less than an hour from when I started reading up on it.</li>
+<li>It feels like incorporating gRPC into a DDD architecture where Event entities are sent over queues may not mesh very well. Not orthogonal as such; my first impression is that it just won&rsquo;t be needed. But I would still use it just for the IDL component to define Command and Event entities, letting the microservices be written in various languages. That&rsquo;s still a huge win.</li>
+</ul>
+</li>
+</ul>
+<h1 id="rust-terminology-notes">Rust Terminology Notes</h1>
+<p>Roughly</p>
+<ul>
+<li>package = program</li>
+<li>crate = library (but technically can be a binary)</li>
+<li>module = a Pascal like module. What people use classes for these days.</li>
+</ul>
+<p>When compiling, cargo looks in ./src to find a &lsquo;main.rs&rsquo;, which means this is a binary package, or &rsquo;lib.rs&rsquo;, which means this is a library package.</p>
+<p>Putting &lsquo;mod foo&rsquo; in your program means</p>
+<ul>
+<li>Search for the module inline</li>
+<li>If not found, try for a module in a file in the same directory. The file should be name &lsquo;foo.rs&rsquo;</li>
+<li>If not there, try &lsquo;src/foo/mod.rs&rsquo;. Note the filename changed from &lsquo;foo.rs&rsquo; to &lsquo;mod.rs&rsquo;</li>
+</ul>
+<p>Modules can have submodules. They are searched for with the same rules as above, but instead of looking with &lsquo;/src&rsquo; as the root, it would use &lsquo;/src/foo&rsquo;. If you have a submodule bar you most likely would define it in &lsquo;/src/foo/bar/mod.rs&rsquo;.</p>
 
                     </div>
                     
@@ -163,7 +196,7 @@
                     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     
                     
-                        <a class="d-block col-md-6 text-lg-right" href="/posts/20230206-yesterdays-war/">Yesterdays War &raquo;</a>
+                        <a class="d-block col-md-6 text-lg-right" href="/blog/20230403-today-i-learned/">20230403 Today I Learned &raquo;</a>
                     
                     <div class="clearfix"></div>
                     </div>
