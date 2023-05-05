@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>John Storey - All rights reserved</copyright>
-    <lastBuildDate>Sat, 15 Apr 2023 08:47:55 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 08:25:03 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang / PocketBase User Authentication</title>
+      <link>/blog/golang-user-authentication/</link>
+      <pubDate>Fri, 05 May 2023 08:25:03 -0500</pubDate>
+      
+      <guid>/blog/golang-user-authentication/</guid>
+      <description>Recently I have been taking a side trip from Rust to the land of Go. I am producing solutions much quicker in Go. I enjoy that, but the lack of safety from the Rust compiler has bitten me twice in a week of side project work.</description>
+    </item>
+    
     <item>
       <title>Rust Terminology</title>
       <link>/blog/rust-terminology/</link>
