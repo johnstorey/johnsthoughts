@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.113.0">
+	
+	<link rel="icon" href="/assets/images/tux-logo.jpg">
+	
+	<title>Vscode Run Failed Dotnet Tests | John&#39;s Thoughts</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vscode Run Failed Dotnet Tests"/>
+<meta name="twitter:description" content="Today I decided to look at the C# Dev Kit for Visual Studio Code released by Microsoft yesterday. I&rsquo;m leaving my current position after this week, but we have a small issue that has stopped me and some co-workers from using Visual Studio Code for work."/>
+
+	<meta property="og:title" content="Vscode Run Failed Dotnet Tests" />
+<meta property="og:description" content="Today I decided to look at the C# Dev Kit for Visual Studio Code released by Microsoft yesterday. I&rsquo;m leaving my current position after this week, but we have a small issue that has stopped me and some co-workers from using Visual Studio Code for work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/vscode-run-failed-dotnet-tests/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-06-07T15:09:40-05:00" />
+<meta property="article:modified_time" content="2023-06-07T15:09:40-05:00" />
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="/css/medium.a3d5489836b19de22a81ddc6bd21c17547d07529e67b266427378a04fa3ea727.css" integrity="sha256-o9VImDaxneIqgd3GvSHBdUfQdSnmeyZkJzeKBPo&#43;pyc=">
+
+	
+	<link rel="stylesheet" href="/css/additional.8819b6defcdc6d21280f9b402b00df87ca779135901de6c22e708c62e20184b9.css" integrity="sha256-iBm23vzcbSEoD5tAKwDfh8p3kTWQHebCLnCMYuIBhLk=">
+
+	
+	
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="//">
+
+            
+            <img src="/assets/images/tux-logo.jpg" alt="logo">
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">About Me</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="mainheading">
+    <h1 class="sitetitle">John&#39;s Thoughts</h1>
+    <p class="lead">
+         Software and Culture.
+    </p>
+</div><div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Vscode%20Run%20Failed%20Dotnet%20Tests&url=%2fblog%2fvscode-run-failed-dotnet-tests%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=%2fblog%2fvscode-run-failed-dotnet-tests%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=%2fblog%2fvscode-run-failed-dotnet-tests%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>        
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                        
+                        
+                        
+                        <div class="row post-top-meta">
+                            <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
+                                <img class="author-thumb" src="/assets/images/author.png" alt="John Storey">
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+                                <a target="_blank" class="link-dark">John Storey</a><br>
+                                <span class="author-description">
+                                    Software Engineering Manager and Happy  Texan<br>
+                                    <i class="far fa-star"></i>
+                                    Jun 7, 2023
+                                    <i class="far fa-clock clock"></i>
+                                    5 min read
+                                </span>					
+                            </div>
+                        </div>			
+                        	
+                        
+                                                
+                        
+                        <h1 class="posttitle">Vscode Run Failed Dotnet Tests</h1> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+                        <p>Today I decided to look at the <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit for Visual Studio Code</a> released by Microsoft yesterday. I&rsquo;m leaving my current position after this week, but we have a small issue that has stopped me and some co-workers from using Visual Studio Code for work. Instead we use Visual Studio or Rider. Since I use Visual Studio Code for everything else, this is a bit frustrating.</p>
+<p>Unfortunately the problem persists in C# Dev Kit. Since it will probably still be an issue in my next position, using F#, I decided to try a quick fix.</p>
+<h1 id="what-is-this-problem">What is this &ldquo;problem&rdquo;?</h1>
+<p>Basically our integration test suite is growing every release (as they do.) Right now it&rsquo;s over 3000 tests. Some of them fail on the first run. With Visual Studio and Rider there is a nice button for &ldquo;rerun failed tests&rdquo;. Usually we press it 2 or 3 times to get all the tests to pass.</p>
+<p>(Let&rsquo;s not think about how that does not translate to CI pipelines at the moment).</p>
+<p>There is no &ldquo;dotnet test rerun-failed&rdquo;, so I took some time to look into it. As a result I have created some bash scripts and attached them to Visual Studio Code tasks. Now running all tests and just rerunning the failed tests is as simple as &ldquo;SPC : :&rdquo; with the <a href="https://marketplace.visualstudio.com/items?itemName=VSpaceCode.vspacecode">VSpaceCode Extension</a>. Command line is not a nice as a radiator in the GUI, but it does get the job done.</p>
+<p>Here are the task configurations and the shell scripts. They can be used by you with some obvious customizations.</p>
+<p>These are run on MacOS, so there may be some minor difference from grep and sed on Linux. If so I&rsquo;ll find out when running them in Dev Containers and come back and update this post.</p>
+<h2 id="task-configurations">Task Configurations</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;dotnet:runalltests&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;~/scripts/dotnet-test-run.sh&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;shell&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;args&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;--runsettings&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;/Users/johnstorey/Documents/projects/bios/parallel.dev.config.runsettings&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;options&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;cwd&#34;</span>: <span style="color:#e6db74">&#34;${workspaceFolder}/IntegrationTests&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;group&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;kind&#34;</span>: <span style="color:#e6db74">&#34;test&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;isDefault&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;dotnet:runfailedtests&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;~/scripts/dotnet-test-rerun-failed.sh&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;shell&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;args&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;--runsettings&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;/Users/johnstorey/Documents/projects/bios/parallel.dev.config.runsettings&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;options&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;cwd&#34;</span>: <span style="color:#e6db74">&#34;${workspaceFolder}/IntegrationTests&#34;</span>j
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;group&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;kind&#34;</span>: <span style="color:#e6db74">&#34;test&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;isDefault&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><h2 id="run-all-tests">Run All Tests</h2>
+<p>~/scripts/dotnet-test-run.sh</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parse command-line arguments</span>
+</span></span><span style="display:flex;"><span>runsettings_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>output_directory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TestResults&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> $# -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> $key in
+</span></span><span style="display:flex;"><span>    --runsettings<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      runsettings_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      ;;
+</span></span><span style="display:flex;"><span>    --output-dir<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      output_directory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      ;;
+</span></span><span style="display:flex;"><span>    *<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      echo <span style="color:#e6db74">&#34;Unknown option: </span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>      exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      ;;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">esac</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run dotnet test with the specified runsettings file (if provided)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -n $runsettings_file <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  dotnet test --settings <span style="color:#e6db74">&#34;</span>$runsettings_file<span style="color:#e6db74">&#34;</span> --logger <span style="color:#e6db74">&#34;trx;LogFileName=</span>$output_directory<span style="color:#e6db74">/TestResults.trx&#34;</span> --logger <span style="color:#e6db74">&#34;console;verbosity=detailed&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  dotnet test --logger <span style="color:#e6db74">&#34;trx;LogFileName=</span>$output_directory<span style="color:#e6db74">/TestResults.trx&#34;</span> --logger <span style="color:#e6db74">&#34;console;verbosity=detailed&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h2 id="only-run-failed-tests">Only Run Failed Tests</h2>
+<p>~/scripts/dotnet-test-rerun-failed.sh</p>
+<p>Notice I used the &ldquo;&ndash;no-build&rdquo; option here for &ldquo;dotnet test&rdquo;. Each run of this overwrites the failed tests data, so you won&rsquo;t re-run passing tests if this is run multiple times.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Parse command-line arguments</span>
+</span></span><span style="display:flex;"><span>output_directory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TestResults&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> $# -gt <span style="color:#ae81ff">0</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> $key in
+</span></span><span style="display:flex;"><span>    --runsettings<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      runsettings_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      ;;
+</span></span><span style="display:flex;"><span>    --output-dir<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      output_directory<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      shift
+</span></span><span style="display:flex;"><span>      ;;
+</span></span><span style="display:flex;"><span>    *<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      echo <span style="color:#e6db74">&#34;Unknown option: </span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>      exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      ;;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">esac</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if the test results directory exists</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> ! -d $output_directory <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Test results directory not found: </span>$output_directory<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if the test results file exists</span>
+</span></span><span style="display:flex;"><span>test_results_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$output_directory<span style="color:#e6db74">/TestResults/TestResults.trx&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> ! -f $test_results_file <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Test results file not found: </span>$test_results_file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract the failed test case names from the test results file</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>failed_tests<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>grep -E -o <span style="color:#e6db74">&#39;&lt;UnitTestResult[^&gt;]+outcome=&#34;Failed&#34;[^&gt;]+&gt;&#39;</span> <span style="color:#e6db74">&#34;</span>$test_results_file<span style="color:#e6db74">&#34;</span> | sed -E <span style="color:#e6db74">&#39;s/.*testName=&#34;([^&#34;]+)&#34;.*/\1/&#39;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if any failed tests were found</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z $failed_tests <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;No failed tests found in the test results.&#34;</span>
+</span></span><span style="display:flex;"><span>  exit <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Read each line from the word list and append it to the array</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Needed for loop below.</span>
+</span></span><span style="display:flex;"><span>tokens<span style="color:#f92672">=()</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> IFS<span style="color:#f92672">=</span> read -r line; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  tokens<span style="color:#f92672">+=(</span><span style="color:#e6db74">&#34;</span>$line<span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span> <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$failed_tests<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a filter expression</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize the environment variable</span>
+</span></span><span style="display:flex;"><span>filter_list<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loop over the list of words and concatenate them with &#34; | &#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> word in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>tokens[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Trim the newline character</span>
+</span></span><span style="display:flex;"><span>  word<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;</span>$word<span style="color:#e6db74">&#34;</span> | tr -d <span style="color:#e6db74">&#39;\n&#39;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$filter_list<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    filter_list<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$word<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>    filter_list<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$filter_list<span style="color:#e6db74"> | </span>$word<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;(</span>$filter_list<span style="color:#e6db74">)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Rerun only the failed tests</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -n $runsettings_file <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># dotnet test --testlist &#34;$test_list_file&#34; --settings &#34;$runsettings_file&#34; --logger &#34;console;verbosity=detailed&#34;</span>
+</span></span><span style="display:flex;"><span>  dotnet test --no-build --filter <span style="color:#e6db74">&#34;(</span>$filter_list<span style="color:#e6db74">)&#34;</span> --settings <span style="color:#e6db74">&#34;</span>$runsettings_file<span style="color:#e6db74">&#34;</span> --logger <span style="color:#e6db74">&#34;console;verbosity=detailed&#34;</span> --logger <span style="color:#e6db74">&#34;trx;LogFileName=</span>$output_directory<span style="color:#e6db74">/TestResults.trx&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  dotnet test --no-build --filter <span style="color:#e6db74">&#34;(</span>$filter_list<span style="color:#e6db74">)&#34;</span> --settings <span style="color:#e6db74">&#34;</span>$output_directory<span style="color:#e6db74">/test.runsettings&#34;</span> --logger <span style="color:#e6db74">&#34;console;verbosity=detailed&#34;</span> --logger <span style="color:#e6db74">&#34;console;verbosity=detailed&#34;</span> --logger <span style="color:#e6db74">&#34;trx;LogFileName=</span>$output_directory<span style="color:#e6db74">/TestResults.trx&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h1 id="next-steps">Next Steps</h1>
+<p>It seems obvious to me how to put this into a pipeline that reruns failed tests N times before failing. That is something I&rsquo;ll pass on to my successor at work, though I know he has a similar solution in PowerShell that might do exactly the same thing.</p>
+<p>Other than that, this meets my needs so I will probably not advance it further. But it&rsquo;s easy to see room for improvements or repurposing the logic into programs to</p>
+<ul>
+<li>Modify the list of tests to run to have the fully qualified name. The documentation of &ldquo;dotnet test &ndash;filter&rdquo; states that using just the test name, and I do, only works with MSTest. The fully qualified name runs with all tests. That may &ldquo;just happen&rdquo; with non MSTest frameworks.</li>
+<li>Add a third script to just list the failed tests. The code is in the script to rerun the failed tests already, and it gives some of the value of a dashboard.</li>
+<li>Make this a nice desktop app that is IDE independent. Parsing the TestResults/TestResults/TestResults.trx file will let you build the equivalent of the Visual Studio and Rider test runners easily enough.</li>
+<li>Make a Visual Studio Code extension using this solution pattern. I like that because many will want this in PowerShell and when it comes to scripting that I go blank. Ask Chat-GPT or GitHub CoPilot I guess. (I bet I could get them to rewrite this as a VS Code extension actually &hellip; but no, my project plate is overflowing. Let me know if you do it.)</li>
+</ul>
+
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+                        <ul class="tags">
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="/blog/golang-user-authentication/">Golang / PocketBase User Authentication &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                &copy; Copyright John Storey - All rights reserved
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" rel="noopener" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script src="/js/mediumish.84218587c174fd40bce82544b98851670f0b124a7324b349c54a4065e2b32ffc.js" integrity="sha256-hCGFh8F0/UC86CVEuYhRZw8LEkpzJLNJxUpAZeKzL/w="></script>
+    </body>
+</html>

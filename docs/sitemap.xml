@@ -3,12 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/blog/</loc>
-    <lastmod>2023-05-05T08:25:03-05:00</lastmod>
-  </url><url>
-    <loc>/blog/golang-user-authentication/</loc>
-    <lastmod>2023-05-05T08:25:03-05:00</lastmod>
+    <lastmod>2023-06-07T15:09:40-05:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2023-06-07T15:09:40-05:00</lastmod>
+  </url><url>
+    <loc>/blog/vscode-run-failed-dotnet-tests/</loc>
+    <lastmod>2023-06-07T15:09:40-05:00</lastmod>
+  </url><url>
+    <loc>/blog/golang-user-authentication/</loc>
     <lastmod>2023-05-05T08:25:03-05:00</lastmod>
   </url><url>
     <loc>/blog/rust-terminology/</loc>
