@@ -13,7 +13,7 @@ Basically our integration test suite is growing every release (as they do.) Righ
 
 (Let's not think about how that does not translate to CI pipelines at the moment).
 
-There is no "dotnet test rerun-failed", so I took some time to look into it. As a result I have created some bash scripts and attached them to Visual Studio Code tasks. Now running all tests and just rerunning the failed tests is as simple as "SPC : :" with the [VSpaceCode Extension](https://marketplace.visualstudio.com/items?itemName=VSpaceCode.vspacecode). Command line is not a nice as a radiator in the GUI, but it does get the job done.
+There is no such button in Visual Studio Code, and there is no "dotnet test rerun-failed", so I took some time to look into it. As a result I have created some bash scripts and attached them to Visual Studio Code tasks. Now running all tests and just rerunning the failed tests is as simple as "SPC : :" with the [VSpaceCode Extension](https://marketplace.visualstudio.com/items?itemName=VSpaceCode.vspacecode). Command line is not a nice as a radiator in the GUI, but it does get the job done.
 
 Here are the task configurations and the shell scripts. They can be used by you with some obvious customizations.
 
