@@ -9,7 +9,7 @@ draft: false
 Having settled on Visual Studio Code with the VSpaceCode and NeoVim plugins, I want them to work together. The first step is to
 get the NeoVim plugin to pass the <SPACE> keypresses to VSpaceCode. Here are the steps (on MacOS)
 
-1. Open or created ~/config/nvim/init.vim
+1. Open or create ~/config/nvim/init.vim
 2. Add a command to pass the <SPACE> keypress along
 
 ```shell
