@@ -2,59 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/blog/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <lastmod>2024-03-27T08:29:09-05:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/blog/boox-page-or-kindle/</loc>
     <lastmod>2024-03-27T08:29:09-05:00</lastmod>
   </url><url>
-    <loc>/blog/vspacecode-and-neovim-together/</loc>
+    <loc>//localhost:1313/posts/boox-page-or-kindle/</loc>
+    <lastmod>2024-03-27T08:29:09-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-03-27T08:29:09-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2024-03-27T08:29:09-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/vspacecode-and-neovim-together/</loc>
     <lastmod>2023-06-20T06:58:53-05:00</lastmod>
   </url><url>
-    <loc>/blog/vscode-run-failed-dotnet-tests/</loc>
+    <loc>//localhost:1313/posts/vspacecode-and-neovim-together/</loc>
+    <lastmod>2023-06-20T06:58:53-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/vscode-run-failed-dotnet-tests/</loc>
     <lastmod>2023-06-07T15:09:40-05:00</lastmod>
   </url><url>
-    <loc>/blog/golang-user-authentication/</loc>
+    <loc>//localhost:1313/posts/vscode-run-failed-dotnet-tests/</loc>
+    <lastmod>2023-06-07T15:09:40-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/golang-user-authentication/</loc>
     <lastmod>2023-05-05T08:25:03-05:00</lastmod>
   </url><url>
-    <loc>/blog/rust-terminology/</loc>
+    <loc>//localhost:1313/posts/golang-user-authentication/</loc>
+    <lastmod>2023-05-05T08:25:03-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/rust-terminology/</loc>
     <lastmod>2023-04-15T08:47:55-05:00</lastmod>
   </url><url>
-    <loc>/blog/20230403-today-i-learned/</loc>
+    <loc>//localhost:1313/posts/rust-terminology/</loc>
+    <lastmod>2023-04-15T08:47:55-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/20230403-today-i-learned/</loc>
     <lastmod>2023-04-03T08:29:09-05:00</lastmod>
   </url><url>
-    <loc>/blog/chatgpt-and-rust/</loc>
+    <loc>//localhost:1313/posts/20230403-today-i-learned/</loc>
+    <lastmod>2023-04-03T08:29:09-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/chatgpt-and-rust/</loc>
     <lastmod>2023-03-23T07:40:14-05:00</lastmod>
   </url><url>
-    <loc>/blog/20230206-yesterdays-war/</loc>
-    <lastmod>2023-03-07T20:01:14-06:00</lastmod>
+    <loc>//localhost:1313/posts/chatgpt-and-rust/</loc>
+    <lastmod>2023-03-23T07:40:14-05:00</lastmod>
   </url><url>
-    <loc>/posts/20230206-blog-hosting/</loc>
+    <loc>//localhost:1313/blog/20230206-blog-hosting/</loc>
     <lastmod>2023-02-06T22:09:52-06:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/posts/20230206-blog-hosting/</loc>
     <lastmod>2023-02-06T22:09:52-06:00</lastmod>
   </url><url>
-    <loc>/posts/20230206-yesterdays-war/</loc>
+    <loc>//localhost:1313/blog/20230206-yesterdays-war/</loc>
     <lastmod>2023-02-06T20:45:57-06:00</lastmod>
   </url><url>
-    <loc>/blog/20230120-weekly-learnings/</loc>
+    <loc>//localhost:1313/posts/20230206-yesterdays-war/</loc>
+    <lastmod>2023-02-06T20:45:57-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/20230120-weekly-learnings/</loc>
     <lastmod>2023-01-20T20:01:00-06:00</lastmod>
   </url><url>
-    <loc>/posts/20230120-weekly-learnings/</loc>
-    <lastmod>2023-01-20T10:20:53-06:00</lastmod>
+    <loc>//localhost:1313/posts/20230120-weekly-learnings/</loc>
+    <lastmod>2023-01-20T20:01:00-06:00</lastmod>
   </url><url>
-    <loc>/posts/life-update-20220111/</loc>
-    <lastmod>2023-01-11T10:20:53-06:00</lastmod>
-  </url><url>
-    <loc>/posts/2023-rust-or-f%23/</loc>
+    <loc>//localhost:1313/blog/2023-rust-or-f%23/</loc>
     <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/life-update-20220111/</loc>
+    <loc>//localhost:1313/posts/2023-rust-or-f%23/</loc>
+    <lastmod>2022-12-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/life-update-20220111/</loc>
     <lastmod>2022-01-11T20:00:41-06:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/posts/life-update-20220111/</loc>
+    <lastmod>2022-01-11T20:00:41-06:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

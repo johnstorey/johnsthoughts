@@ -9,3 +9,5 @@ hugo new blog/my-first-post/index.md
 hugo
 git commits
 git push production master
+
+* Note Bene: make sure you have render on in front matter, and directory is in content/blog

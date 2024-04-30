@@ -1,11 +1,6 @@
 ---
 title: "I bought an Onyx Book Page"
 date: 2024-03-27T08:29:09-05:00
-draft: false
-_build:
-  render: never
-  list: never
-  publishResources: false
 ---
 
 Recently -- March 2024 -- I decided to replace my 2013 era Kindle. Page turns now took 1 to 2 seconds to happen, and it could not run the latest software. In addition

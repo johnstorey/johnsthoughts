@@ -2,109 +2,179 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>John&#39;s Thoughts</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on John&#39;s Thoughts</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>John Storey - All rights reserved</copyright>
-    <lastBuildDate>Tue, 20 Jun 2023 06:58:53 -0500</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2024 08:29:09 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I bought an Onyx Book Page</title>
+      <link>//localhost:1313/blog/boox-page-or-kindle/</link>
+      <pubDate>Wed, 27 Mar 2024 08:29:09 -0500</pubDate>
+      <guid>//localhost:1313/blog/boox-page-or-kindle/</guid>
+      <description>Recently &amp;ndash; March 2024 &amp;ndash; I decided to replace my 2013 era Kindle. Page turns now took 1 to 2 seconds to happen, and it could not run the latest software.</description>
+    </item>
+    <item>
+      <title>I bought an Onyx Book Page</title>
+      <link>//localhost:1313/posts/boox-page-or-kindle/</link>
+      <pubDate>Wed, 27 Mar 2024 08:29:09 -0500</pubDate>
+      <guid>//localhost:1313/posts/boox-page-or-kindle/</guid>
+      <description>Recently &amp;ndash; March 2024 &amp;ndash; I decided to replace my 2013 era Kindle. Page turns now took 1 to 2 seconds to happen, and it could not run the latest software.</description>
+    </item>
     <item>
       <title>VSpaceCode and NeoVim Together</title>
-      <link>/blog/vspacecode-and-neovim-together/</link>
+      <link>//localhost:1313/blog/vspacecode-and-neovim-together/</link>
       <pubDate>Tue, 20 Jun 2023 06:58:53 -0500</pubDate>
-      <guid>/blog/vspacecode-and-neovim-together/</guid>
+      <guid>//localhost:1313/blog/vspacecode-and-neovim-together/</guid>
+      <description>Note on using VSpaceCode plugin and Neovim Plugin Having settled on Visual Studio Code with the VSpaceCode and NeoVim plugins, I want them to work together.</description>
+    </item>
+    <item>
+      <title>VSpaceCode and NeoVim Together</title>
+      <link>//localhost:1313/posts/vspacecode-and-neovim-together/</link>
+      <pubDate>Tue, 20 Jun 2023 06:58:53 -0500</pubDate>
+      <guid>//localhost:1313/posts/vspacecode-and-neovim-together/</guid>
       <description>Note on using VSpaceCode plugin and Neovim Plugin Having settled on Visual Studio Code with the VSpaceCode and NeoVim plugins, I want them to work together.</description>
     </item>
     <item>
       <title>Vscode Run Failed Dotnet Tests</title>
-      <link>/blog/vscode-run-failed-dotnet-tests/</link>
+      <link>//localhost:1313/blog/vscode-run-failed-dotnet-tests/</link>
       <pubDate>Wed, 07 Jun 2023 15:09:40 -0500</pubDate>
-      <guid>/blog/vscode-run-failed-dotnet-tests/</guid>
+      <guid>//localhost:1313/blog/vscode-run-failed-dotnet-tests/</guid>
+      <description>Today I decided to look at the C# Dev Kit for Visual Studio Code released by Microsoft yesterday. I&amp;rsquo;m leaving my current position after this week, but we have a small issue that has stopped me and some co-workers from using Visual Studio Code for work.</description>
+    </item>
+    <item>
+      <title>Vscode Run Failed Dotnet Tests</title>
+      <link>//localhost:1313/posts/vscode-run-failed-dotnet-tests/</link>
+      <pubDate>Wed, 07 Jun 2023 15:09:40 -0500</pubDate>
+      <guid>//localhost:1313/posts/vscode-run-failed-dotnet-tests/</guid>
       <description>Today I decided to look at the C# Dev Kit for Visual Studio Code released by Microsoft yesterday. I&amp;rsquo;m leaving my current position after this week, but we have a small issue that has stopped me and some co-workers from using Visual Studio Code for work.</description>
     </item>
     <item>
       <title>Golang / PocketBase User Authentication</title>
-      <link>/blog/golang-user-authentication/</link>
+      <link>//localhost:1313/blog/golang-user-authentication/</link>
       <pubDate>Fri, 05 May 2023 08:25:03 -0500</pubDate>
-      <guid>/blog/golang-user-authentication/</guid>
+      <guid>//localhost:1313/blog/golang-user-authentication/</guid>
+      <description>Recently I have been taking a side trip from Rust to the land of Go. I am producing solutions much quicker in Go. I enjoy that, but the lack of safety from the Rust compiler has bitten me twice in a week of side project work.</description>
+    </item>
+    <item>
+      <title>Golang / PocketBase User Authentication</title>
+      <link>//localhost:1313/posts/golang-user-authentication/</link>
+      <pubDate>Fri, 05 May 2023 08:25:03 -0500</pubDate>
+      <guid>//localhost:1313/posts/golang-user-authentication/</guid>
       <description>Recently I have been taking a side trip from Rust to the land of Go. I am producing solutions much quicker in Go. I enjoy that, but the lack of safety from the Rust compiler has bitten me twice in a week of side project work.</description>
     </item>
     <item>
       <title>Rust Terminology</title>
-      <link>/blog/rust-terminology/</link>
+      <link>//localhost:1313/blog/rust-terminology/</link>
       <pubDate>Sat, 15 Apr 2023 08:47:55 -0500</pubDate>
-      <guid>/blog/rust-terminology/</guid>
+      <guid>//localhost:1313/blog/rust-terminology/</guid>
+      <description>TIL This post contains some personal notes on Rust terminology, but also learned today / this week&#xA;Microsoft PowerApps has serious developer experience issues in Chrome on MacOS, including Change a flow called by a Canvas App, and the changed input variables may or may not be propagated to the .</description>
+    </item>
+    <item>
+      <title>Rust Terminology</title>
+      <link>//localhost:1313/posts/rust-terminology/</link>
+      <pubDate>Sat, 15 Apr 2023 08:47:55 -0500</pubDate>
+      <guid>//localhost:1313/posts/rust-terminology/</guid>
       <description>TIL This post contains some personal notes on Rust terminology, but also learned today / this week&#xA;Microsoft PowerApps has serious developer experience issues in Chrome on MacOS, including Change a flow called by a Canvas App, and the changed input variables may or may not be propagated to the .</description>
     </item>
     <item>
       <title>20230403 Today I Learned</title>
-      <link>/blog/20230403-today-i-learned/</link>
+      <link>//localhost:1313/blog/20230403-today-i-learned/</link>
       <pubDate>Mon, 03 Apr 2023 08:29:09 -0500</pubDate>
-      <guid>/blog/20230403-today-i-learned/</guid>
+      <guid>//localhost:1313/blog/20230403-today-i-learned/</guid>
+      <description>Technically &amp;ldquo;this weekend I learned&amp;rdquo; but still. Maybe even better &amp;ldquo;what I learned in the 2 - 3 hours I was able to squeeze out for coding this weekend&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>20230403 Today I Learned</title>
+      <link>//localhost:1313/posts/20230403-today-i-learned/</link>
+      <pubDate>Mon, 03 Apr 2023 08:29:09 -0500</pubDate>
+      <guid>//localhost:1313/posts/20230403-today-i-learned/</guid>
       <description>Technically &amp;ldquo;this weekend I learned&amp;rdquo; but still. Maybe even better &amp;ldquo;what I learned in the 2 - 3 hours I was able to squeeze out for coding this weekend&amp;rdquo;.</description>
     </item>
     <item>
       <title>ChatGPT and Rust</title>
-      <link>/blog/chatgpt-and-rust/</link>
+      <link>//localhost:1313/blog/chatgpt-and-rust/</link>
       <pubDate>Thu, 23 Mar 2023 07:40:14 -0500</pubDate>
-      <guid>/blog/chatgpt-and-rust/</guid>
+      <guid>//localhost:1313/blog/chatgpt-and-rust/</guid>
       <description>A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution.</description>
     </item>
     <item>
-      <title>20230206 Yesterdays War</title>
-      <link>/blog/20230206-yesterdays-war/</link>
-      <pubDate>Tue, 07 Mar 2023 20:01:14 -0600</pubDate>
-      <guid>/blog/20230206-yesterdays-war/</guid>
-      <description>I&amp;rsquo;ve been around awhile. Maybe you have two. One of the eternal wars among developers is: Emacs, Vi, or an IDE? It&amp;rsquo;s so famous its in cartoons, such as this famous one from (XKCD)[https://xkcd.</description>
+      <title>ChatGPT and Rust</title>
+      <link>//localhost:1313/posts/chatgpt-and-rust/</link>
+      <pubDate>Thu, 23 Mar 2023 07:40:14 -0500</pubDate>
+      <guid>//localhost:1313/posts/chatgpt-and-rust/</guid>
+      <description>A couple of weeks back I had an exchange of messages on the Fediverse that ended in me speculating there should be a Docker Registry that supports Bittorrent for image distribution.</description>
     </item>
     <item>
       <title>Blog Hosting</title>
-      <link>/posts/20230206-blog-hosting/</link>
+      <link>//localhost:1313/blog/20230206-blog-hosting/</link>
       <pubDate>Mon, 06 Feb 2023 22:09:52 -0600</pubDate>
-      <guid>/posts/20230206-blog-hosting/</guid>
+      <guid>//localhost:1313/blog/20230206-blog-hosting/</guid>
+      <description>How are you seeing this? It&amp;rsquo;s self-hosted, like many of my services. My overlay network is Tailscale.&#xA;.</description>
+    </item>
+    <item>
+      <title>Blog Hosting</title>
+      <link>//localhost:1313/posts/20230206-blog-hosting/</link>
+      <pubDate>Mon, 06 Feb 2023 22:09:52 -0600</pubDate>
+      <guid>//localhost:1313/posts/20230206-blog-hosting/</guid>
       <description>How are you seeing this? It&amp;rsquo;s self-hosted, like many of my services. My overlay network is Tailscale.&#xA;.</description>
     </item>
     <item>
       <title>Yesterdays War</title>
-      <link>/posts/20230206-yesterdays-war/</link>
+      <link>//localhost:1313/blog/20230206-yesterdays-war/</link>
       <pubDate>Mon, 06 Feb 2023 20:45:57 -0600</pubDate>
-      <guid>/posts/20230206-yesterdays-war/</guid>
+      <guid>//localhost:1313/blog/20230206-yesterdays-war/</guid>
+      <description>Yesterday&amp;rsquo;s War I&amp;rsquo;ve been around awhile. Maybe you have two. One of the eternal wars among developers is: Emacs, Vi, or an IDE? It&amp;rsquo;s so famous its in cartoons, such as this famous one from (XKCD)[https://xkcd.</description>
+    </item>
+    <item>
+      <title>Yesterdays War</title>
+      <link>//localhost:1313/posts/20230206-yesterdays-war/</link>
+      <pubDate>Mon, 06 Feb 2023 20:45:57 -0600</pubDate>
+      <guid>//localhost:1313/posts/20230206-yesterdays-war/</guid>
       <description>Yesterday&amp;rsquo;s War I&amp;rsquo;ve been around awhile. Maybe you have two. One of the eternal wars among developers is: Emacs, Vi, or an IDE? It&amp;rsquo;s so famous its in cartoons, such as this famous one from (XKCD)[https://xkcd.</description>
     </item>
     <item>
       <title>20230120 Weekly Learnings</title>
-      <link>/blog/20230120-weekly-learnings/</link>
+      <link>//localhost:1313/blog/20230120-weekly-learnings/</link>
       <pubDate>Fri, 20 Jan 2023 20:01:00 -0600</pubDate>
-      <guid>/blog/20230120-weekly-learnings/</guid>
+      <guid>//localhost:1313/blog/20230120-weekly-learnings/</guid>
       <description>This week has been solidifying a first cut at infrastructure to develop side projects on. Lots of research currently has me settled on the following technologies.</description>
     </item>
     <item>
       <title>20230120 Weekly Learnings</title>
-      <link>/posts/20230120-weekly-learnings/</link>
-      <pubDate>Fri, 20 Jan 2023 10:20:53 -0600</pubDate>
-      <guid>/posts/20230120-weekly-learnings/</guid>
+      <link>//localhost:1313/posts/20230120-weekly-learnings/</link>
+      <pubDate>Fri, 20 Jan 2023 20:01:00 -0600</pubDate>
+      <guid>//localhost:1313/posts/20230120-weekly-learnings/</guid>
       <description>This week has been solidifying a first cut at infrastructure to develop side projects on. Lots of research currently has me settled on the following technologies.</description>
     </item>
     <item>
-      <title>Life Update 20220111</title>
-      <link>/posts/life-update-20220111/</link>
-      <pubDate>Wed, 11 Jan 2023 10:20:53 -0600</pubDate>
-      <guid>/posts/life-update-20220111/</guid>
-      <description>It&amp;rsquo;s been a short while since I&amp;rsquo;ve posted, but my project list remains overloaded. So here is a brief update on what I&amp;rsquo;ve been up to.</description>
+      <title>2023 Rust or F#?</title>
+      <link>//localhost:1313/blog/2023-rust-or-f%23/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/2023-rust-or-f%23/</guid>
+      <description>Why Am I Choosing a New Language Programmers periodically need to keep up to date with the world around them. Tools, methodologies, and languages are in a constant state of improvement.</description>
     </item>
     <item>
       <title>2023 Rust or F#?</title>
-      <link>/posts/2023-rust-or-f%23/</link>
+      <link>//localhost:1313/posts/2023-rust-or-f%23/</link>
       <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>/posts/2023-rust-or-f%23/</guid>
+      <guid>//localhost:1313/posts/2023-rust-or-f%23/</guid>
       <description>Why Am I Choosing a New Language Programmers periodically need to keep up to date with the world around them. Tools, methodologies, and languages are in a constant state of improvement.</description>
     </item>
     <item>
       <title>Life Update 20220111</title>
-      <link>/blog/life-update-20220111/</link>
+      <link>//localhost:1313/blog/life-update-20220111/</link>
       <pubDate>Tue, 11 Jan 2022 20:00:41 -0600</pubDate>
-      <guid>/blog/life-update-20220111/</guid>
+      <guid>//localhost:1313/blog/life-update-20220111/</guid>
+      <description>It&amp;rsquo;s been a short while since I&amp;rsquo;ve posted, but my project list remains overloaded. So here is a brief update on what I&amp;rsquo;ve been up to.</description>
+    </item>
+    <item>
+      <title>Life Update 20220111</title>
+      <link>//localhost:1313/posts/life-update-20220111/</link>
+      <pubDate>Tue, 11 Jan 2022 20:00:41 -0600</pubDate>
+      <guid>//localhost:1313/posts/life-update-20220111/</guid>
       <description>It&amp;rsquo;s been a short while since I&amp;rsquo;ve posted, but my project list remains overloaded. So here is a brief update on what I&amp;rsquo;ve been up to.</description>
     </item>
   </channel>
