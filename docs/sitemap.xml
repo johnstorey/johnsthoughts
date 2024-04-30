@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/blog/</loc>
-    <lastmod>2023-06-20T06:58:53-05:00</lastmod>
+    <lastmod>2024-03-27T08:29:09-05:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2023-06-20T06:58:53-05:00</lastmod>
+    <lastmod>2024-03-27T08:29:09-05:00</lastmod>
   </url><url>
     <loc>/blog/vspacecode-and-neovim-together/</loc>
     <lastmod>2023-06-20T06:58:53-05:00</lastmod>
@@ -29,20 +29,11 @@
     <loc>/blog/20230206-yesterdays-war/</loc>
     <lastmod>2023-03-07T20:01:14-06:00</lastmod>
   </url><url>
-    <loc>/post/20230206-blog-hosting/</loc>
-    <lastmod>2023-02-06T22:09:52-06:00</lastmod>
-  </url><url>
     <loc>/posts/20230206-blog-hosting/</loc>
     <lastmod>2023-02-06T22:09:52-06:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
     <lastmod>2023-02-06T22:09:52-06:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2023-02-06T22:09:52-06:00</lastmod>
-  </url><url>
-    <loc>/post/20230206-yesterdays-war/</loc>
-    <lastmod>2023-02-06T20:45:57-06:00</lastmod>
   </url><url>
     <loc>/posts/20230206-yesterdays-war/</loc>
     <lastmod>2023-02-06T20:45:57-06:00</lastmod>
@@ -50,22 +41,13 @@
     <loc>/blog/20230120-weekly-learnings/</loc>
     <lastmod>2023-01-20T20:01:00-06:00</lastmod>
   </url><url>
-    <loc>/post/20230120-weekly-learnings/</loc>
-    <lastmod>2023-01-20T10:20:53-06:00</lastmod>
-  </url><url>
     <loc>/posts/20230120-weekly-learnings/</loc>
     <lastmod>2023-01-20T10:20:53-06:00</lastmod>
-  </url><url>
-    <loc>/post/life-update-20220111/</loc>
-    <lastmod>2023-01-11T10:20:53-06:00</lastmod>
   </url><url>
     <loc>/posts/life-update-20220111/</loc>
     <lastmod>2023-01-11T10:20:53-06:00</lastmod>
   </url><url>
-    <loc>/post/2023-rust-or-f#/</loc>
-    <lastmod>2022-12-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/2023-rust-or-f#/</loc>
+    <loc>/posts/2023-rust-or-f%23/</loc>
     <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/life-update-20220111/</loc>
